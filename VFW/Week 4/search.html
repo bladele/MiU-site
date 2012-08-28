@@ -1,0 +1,79 @@
+<!doctype html>
+<!doctype html>
+	<head>
+		<!-- Character Set Meta -->
+		<meta charset="utf-8" />
+
+		<!-- Description & Key words -->
+		<meta name = "description" content= "My first Application." />
+		<meta name = "keywords" content = "html5, mobile development, Full Sail University"/>
+		<meta name="robots" content="noindex, nofollow">
+				<!-- Mobile viewport optimization -->
+		<meta name = "HandheldFriendly" content = "True" />
+		<meta name = "MobileOptimized" content = "320" />
+		<meta name = "viewport" content = "user-scalable=no, width=device-width" />
+		
+		<!--Page Title-->
+		<title>Love Log</title>
+			
+		<!-- Background Image -->	
+		<style type="text/css">
+		html {
+			background:url(background.jpg);
+			background-size:100% 100%;
+			background-repeat:no-repeat;
+			padding-top: 0;
+			margin-top: 0;
+		}
+		</style>
+
+		<!-- CSS stylesheet link -->
+		<link rel="stylesheet" href="css/form.css" />
+
+		<!-- Header 1 with Logo Image -->
+		
+		<div>
+			<img src="<3_logo.png">
+		</div>
+
+		
+		
+		</head>
+		<!-- Font from Google Web Fonts -->
+			<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC' rel='stylesheet' type='text/css'>
+			<style>
+				header {
+					font-family: 'IM Fell Great Primer SC', serif;
+				}
+				body{
+					font-family: 'IM Fell Great Primer SC', serif;
+				}
+			</style>
+		
+		<body>
+		
+		<h2>
+		<nav>
+			<a href="#" id="displaylink">My Logs</a>
+			<a href="additem.html" id="addNew" style=""display:none;>New Log</a>
+		</nav>
+		</h2>
+
+		<form action = "#"  method = "post" id="loveLog">
+			<fieldset id="logFieldset">
+				<legend>Search Logs</legend>
+				<ul id="errors"></ul>
+				<ul id="questions">
+					<li id="select"><label for="eventsTypes">Seach Categories:</label></li>
+					<li><label for="searchTerm">Search Term: </label><input type="text" id="search"  /></li>
+				</ul>
+			</fieldset>
+			<input type="button" value="Search Logs" id="search" />
+		</form>
+
+		<div id= "results"></div>
+		<script src="js/json.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>
