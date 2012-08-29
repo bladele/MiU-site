@@ -1,0 +1,136 @@
+/* Title: form.html Styles
+by: Bodunrin Ladele
+for: VFW 1206
+*/
+
+
+/*Make it look like an iPhone*/
+html {	
+		display:-webkit-box;
+		-webkit-box-orient:horizontal;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+		font-size: 100%; 
+    	background-color: #F7EDDA;
+    	overflow-y: scroll;
+
+	}
+
+
+img {	display: block;
+		display:-webkit-box;
+		-webkit-box-orient:horizontal;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+		width: 300px;
+}
+
+div {
+		display:-webkit-box;
+		-webkit-box-orient:horizontal;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+
+}
+
+h1 {	
+		
+		
+	}
+
+h2 {
+
+		font-family: 'IM Fell Great Primer SC', serif;
+		color: #7F0813;
+		margin: 0 0 0 0;
+		width: 100%;
+		text-align: center;
+		display: inline;
+		display:-webkit-box;
+		-webkit-box-orient:horizontal;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+}
+
+/*Logo possitioning*/
+nav{  	display: inline;
+		text-align: center;
+		line-height:22px;
+		letter-spacing: .08em;
+		width: 30%;
+
+}
+
+/*Make it look like an iPhone*/
+body{ 	font: cursive;
+		
+	}
+
+
+
+/*Descendant selectors*/
+form ul{ 	
+			display: inline-block;
+			margin: 10px; 
+			padding: 10px;  
+			
+		}	
+
+p 	{
+		color: #0D1E4C;
+		font-family: 'IM Fell Great Primer SC', serif;
+		font-weight: bold;
+		font: italic small bold 12px Arial;
+		line-height:15px;
+		letter-spacing: .08em;
+		text-align: center;
+		
+	}
+
+input[type=text], textarea {
+								
+								
+								width: 200px;
+								margin: 0 auto;
+								padding: 0px;
+								background: #EEE;
+								border: 1px solid #FFF;
+								
+
+
+							}
+
+#eventLog legend { font-weight: bold;
+		  		   font: 200% cursive;
+		  		   color: #7F0813;
+				}
+
+
+#items ul li {  display: block;
+				background-color: #F0EAD6; 
+				border-radius:10px;
+				padding: 10px; 
+				margin: 10px;
+ 			}
+
+#items ul li ul {  
+				   font-family: 'Satisfy', cursive;
+				   border: 5px solid #7F0813;
+				   border-radius:10px;
+ 			}
+
+label {
+		display: block;
+	  }
+
+/*Attribute selector*/
+[type= 'radio'] {border: none; width: inherit; display: inline;}
+
+/*Descendant selectors*/
+a:link{ color: #7F0813; }	
+a:visited{ color: #3A2C2C;}
+
+
+
+
+
