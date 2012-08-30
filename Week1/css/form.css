@@ -58,6 +58,7 @@ nav{  	display: inline;
 		line-height:22px;
 		letter-spacing: .08em;
 		width: 30%;
+		
 
 }
 
@@ -103,6 +104,7 @@ input[type=text], textarea {
 #eventLog legend { font-weight: bold;
 		  		   font: 200% cursive;
 		  		   color: #7F0813;
+
 				}
 
 
