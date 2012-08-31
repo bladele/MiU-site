@@ -34,8 +34,16 @@ div {
 }
 
 h1 {	
-		
-		
+		font-family: 'IM Fell Great Primer SC', serif;
+		color: #7F0813;
+		margin: 0 0 0 0;
+		width: 100%;
+		text-align: center;
+		display: inline;
+		display:-webkit-box;
+		-webkit-box-orient:horizontal;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;	
 	}
 
 h2 {
@@ -48,6 +56,20 @@ h2 {
 		display: inline;
 		display:-webkit-box;
 		-webkit-box-orient:horizontal;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+}
+
+h3 {
+
+		font-family: 'IM Fell Great Primer SC', serif;
+		color: #7F0813;
+		margin: 0 0 0 0;
+		width: 100%;
+		text-align: center;
+		display: block;
+		display:-webkit-box;
+		-webkit-box-orient:vertical;
 		-webkit-box-pack:center;
 		-webkit-box-align:center;
 }
