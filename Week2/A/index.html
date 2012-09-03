@@ -27,19 +27,92 @@
 <!--Intro page of app. Intro to user.-->
 	<div data-role="page" id="home">
 
-		<div data-role="header" data-position="fixed" data-theme="a">
-			<h1>My DVD Library</h1>
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>About</h1>
 		</div>
 
 		<div data-role="content">
-			<p>If you love movies, you probably own a lot of them.This application is here to help you keep a record your dvd library and make sure you don't loose track of them. </p>
-			<p></p>
-			<p><a href="#myLogs" data-role="button" data-theme="b">Enter</a></p>
+			<p>If you love movies, you probably own a lot of them. If you own a lot of dvds its likely that friends and family borrow them from time to time.</p>
+			<p>This application is here to help you keep a record of your dvds you have in your library and make sure you don't loose track of them.</p>
+			<p><a href="#stage" data-role="button" data-theme="b">Enter</a></p>
 		</div>
 
 	</div>
+    
+<!--Staging Page-->
+	<div data-role="page" id="stage" data-add-back-btn="true">
+    
+    	<div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>Choices</h1>
+    	</div>
+        
+        <!--Choices-->
+        <div data-role="content">
+			<ul data-role="listview" data-inset="true" data-theme="b">
+				<li><h2>Choose</h2>
+					<p>What do you want to do?</p>
+                </li>
+				<li>
+                	<a href="#browse" data-transition="slide">
+					<h2>Browse</h2><span></span></a>
+                </li>
+				<li>
+                	<a href="#add" data-transition="slide">
+					<h2>Add Movie</h2><span></span></a>
+                </li>
+                <li>
+                	<a href="#share" data-transition="slide">
+					<h2>Share</h2><span></span></a>
+                </li>
+                <li>
+                	<a href="#search" data-transition="slide">
+					<h2>Search</h2><span></span></a>
+                </li>
+			</ul>
+		</div>
+        
+    </div>
+    
+<!--Add Movie Page-->
+	<div data-role="page" id="add" data-add-back-btn="true">
+    
+    	<div data-role="header" data-position="fixed" data-theme="e">
+        	<h1>Add Movie</h1>
+        </div>
+        
+        <div data-role="content">
+			<form action="#"  method="post" id="loveLog">
 
+				<h2><span>*Fields are required</span></h2>
+				<ul id="errors"></ul>
+				<ul id="questions">
+					<li id="select"><label for="genre">*Add Genre:</label></li>
+					<li><label for="title">*Movie Title: </label><input type="text" id="title" /></li>
+					<li><label for="location">Location: </label><input type="text" id="location"  /></li>
+					<li><label for="rating">Rating: </label><input type="range" min="0" max="100" id="wow" data-theme="e"></li>
+					<li><label for="condition">Condition: </label><input type="range" min="0" max="100" id="wow" data-theme="e"></li>
+					<li><label for="notes">The Details: </label><textarea id="notes">Type your log here.</textarea></li>
+				</ul>
+		<input type="button" value="Save Log" id="submit" data-theme="b"/>
+		</form>
+		</div>
+
+
+	</div>
 	
+        
+    
+    </div>
+
+
+<!--Browse Page-->
+	<div data-role="page" id="browse" data-add-back-btn="true">
+    
+    	<div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>All DVD's</h1>
+        </div>
+        
+	</div>
 
 	<!-- JavaScript under here -->
     <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
