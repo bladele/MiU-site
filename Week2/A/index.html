@@ -89,9 +89,9 @@
 					<li id="select"><label for="genre">*Add Genre:</label></li>
 					<li><label for="title">*Movie Title: </label><input type="text" id="title" /></li>
 					<li><label for="location">Location: </label><input type="text" id="location"  /></li>
-					<li><label for="rating">Rating: </label><input type="range" min="0" max="100" id="wow" data-theme="e"></li>
-					<li><label for="condition">Condition: </label><input type="range" min="0" max="100" id="wow" data-theme="e"></li>
-					<li><label for="notes">The Details: </label><textarea id="notes">Type your log here.</textarea></li>
+					<li><label for="rating">Rating: </label><input type="range" min="0" max="100" id="rating" data-theme="e"></li>
+					<li><label for="condition">Condition: </label><input type="range" min="0" max="100" id="condition" data-theme="e"></li>
+					<li><label for="notes">The Details: </label><textarea id="notes">Notes.</textarea></li>
 				</ul>
 		<input type="button" value="Save Log" id="submit" data-theme="b"/>
 		</form>
@@ -112,6 +112,21 @@
         	<h1>All DVD's</h1>
         </div>
         
+<!--All the movies in the directory-->        
+        <div data-role="content">
+        
+        	<ul data-role="listview" data-filter="true">
+            	
+                <li>
+                	<a href="#thematrix" data-transition="slide">
+                    <h3>The Matrix</h3>
+                    <p>Locaction: Home</p>
+                    
+                </li>
+                
+            </ul>
+            
+        </div>
 	</div>
 
 	<!-- JavaScript under here -->
