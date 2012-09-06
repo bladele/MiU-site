@@ -1,1 +1,8 @@
-// write your CSS in here
+/* write your CSS in here */
+
+#stage .ui-grid-a div{text-align:center;}
+
+#stage .ui-grid-a .ui-bar{padding:50px 20px;}
+
+
+
