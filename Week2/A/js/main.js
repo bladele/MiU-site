@@ -20,10 +20,10 @@ function makeCats(){
 	var formTag = document.getElementsByTagName("form"), //formTag is an array of all the form tags.
 		selectLi = ge('select'),
 		makeSelect = document.createElement('select');
-		makeSelect.setAttribute("id", "eventTypes");
-	for(var i=0, j=eventTypes.length; i<j; i++){
+		makeSelect.setAttribute("id", "genres");
+	for(var i=0, j=genres.length; i<j; i++){
 		var makeOption = document.createElement('option');
-		var optText = eventTypes[i];
+		var optText = genres[i];
 		makeOption.setAttribute("value", optText);
 		makeOption.innerHTML = optText;
 		makeSelect.appendChild(makeOption);
@@ -45,7 +45,7 @@ function getSelectedRadio(){
 function toggleControls(n){
 	switch(n){
 		case "on":
-			ge('loveLog').style.display = "none";
+			ge('genre').style.display = "none";
 			ge('clear').style.display = "inline";
 			ge('displaylink').style.display = "none";
 			ge('addNew').style.display = "inline";
@@ -75,10 +75,10 @@ function storeData(key){
 	//Object properties contain array with the form lable and input value.
 	getSelectedRadio();
 	var item 				= {};
+		item.genres			= ["Genres: ", ge('genres').value];
 		item.title			= ["Title: ", ge('title').value];
-		item.tags			= ["Tags: ", ge('tags').value];	
 		item.rating			= ["Rating: ", ge('rating').value];
-		item.notes			= ["Notes: ", ge('notes').value];
+		
 		//Save data into Local Storage: Use Stringify to convert our object to a string.
 		localStorage.setItem(id, JSON.stringify(item));
 		alert("Love Log Saved!");
@@ -165,22 +165,21 @@ function editLog() {
 	toggleControls("off");
 
 	//populate the form fields with current localStorage values.
-	ge('eventTypes').value 	= item.eventTypes[1];
+	ge('genres').value 		= item.genres[1];
 	ge('title').value 		= item.title[1];
-	ge('location').value 	= item.location[1];
-	ge('date').value 		= item.date[1];
+	ge('status').value 	= item.status[1];
+	
 
 	var radio = document.forms(0).role;
 	for(var i=0; i<radio.length; i++) {
-		if(radio[i.value == "Recipient" && item.role[1]] == "Recipient") {
+		if(radio[i.value == "in" && item.role[1]] == "in") {
 			radio[i].setAttribute("checked", "checked");
-		} else if(radio[i].value == "Donor" && obj.sex[1] == "Donor"){
+		} else if(radio[i].value == "out" && obj.sex[1] == "out"){
 			radio[i].setAttribute("checked", "checked");
 		}
 	}
 
-	ge('wow').value 			= item.wow[1];
-	ge('notes').value 		= item.notes[1];
+	ge('rating').value 			= item.rating[1];
 
 	//Remove the initial listner fromt the input 'save log' button.
 	save.removeEventListener("click", storeData);
@@ -217,9 +216,9 @@ function clearLogs(){
 
 function validate(e) {
 	//Define the element that we want to check.
-	var getType  = ge('eventTypes');
+	var getType  = ge('genres');
 	var getTitle = ge('title');
-	var getDate  = ge('date');
+	
 	
 
 
@@ -227,12 +226,11 @@ function validate(e) {
 	errMsg.innerHTML = " ";
 		getType.style.border 	= "1px solid black";
 		getTitle.style.border 	= "1px solid black";
-		getDate.style.border 	= "1px solid black";
-
+	
 	//Get Error Messages.
 	var messageAry = [];
 	//Event Type Validation
-	if(getType.value === "--Choose An Event Type--") {
+	if(getType.value === "--Choose Genre--") {
 		var typeError = "Please choose an event type.";
 		getType.style.border = "1px solid red";
 		messageAry.push(typeError);
@@ -243,12 +241,7 @@ function validate(e) {
 		getTitle.style.border = "1px solid red";
 		messageAry.push(titleError);
 	}
-	//Date Validation
-	if(getDate.value === "") {
-		var dateError = "Please enter a date.";
-		getDate.style.border = "1px solid red";
-		messageAry.push(dateError);
-	}
+	
 
 	//If there were any errors, display on the screen.
 	if(messageAry.length >= 1) {
@@ -267,7 +260,7 @@ function validate(e) {
 }
 
 //Variable defaults
-var eventTypes = ["--Chose Genre--", "Action Adventure", "Comedy", "Drama", "Horror", "Kids and Family", "Romance", "Thriller"],
+var genres = ["--Choose Genre--", "Action Adventure", "Comedy", "Drama", "Horror", "Kids and Family", "Romance", "Sci-Fi / Fantacy", "Thriller"],
 	roleValue,
 	errMsg = ge('errors')
 ;
@@ -275,19 +268,19 @@ var eventTypes = ["--Chose Genre--", "Action Adventure", "Comedy", "Drama", "Hor
 makeCats();
 
 
-/* Search
+/* Search */
 function getSearch(){
 	alert("search");
-	var category = ge('eventTypes').value;
+	var category = ge('genres').value;
 	var term = ge('search').value;
 
 	//By Category Only
-	if(category != "--Choose An Event Type--" && term === ""){ 
+	if(category != "--Choose Genre--" && term === ""){ 
 		for(i=0, j=localStorage.length; i<j; i++){
 			var key = localStorage.key(i);
 			var value = localStorage.getItem(key);
 			var obj = JSON.parse(value);
-			if(category === obj.eventTypes[1]){
+			if(category === obj.genres[1]){
 				for (n in obj){
 					console.log(obj[n][1]);
 				}
@@ -296,7 +289,7 @@ function getSearch(){
 	}
 
 	//By Term Only
-	if(term != "" && category === "--Choose An Event Type--"){
+	if(term != "" && category === "--Choose An Genre--"){
 		for(i=0, j=localStorage.length; i<j; i++) {
 			var key = localStorage.key(i);
 			var value = localStorage.getItem[key];
@@ -312,13 +305,13 @@ function getSearch(){
 	}
 
 	//By Category & Term
-	if(term != "" && category != "--Choose An Event Type--"){
+	if(term != "" && category != "--Choose Genre--"){
 		for(i=0, j=localStorage.length; i<j; i++){
 			var key = localStorage.key(i);
 			var value = localStorage.getItem[key];
 			var obj = JSON.parse(value);
 			for (n in obj){
-				if (term === obj[n][1] && category === obj.eventTypes[1]);
+				if (term === obj[n][1] && category === obj.genres[1]);
 				for (g in obj){
 					console.log(obj[g][1]);
 				}
@@ -327,14 +320,12 @@ function getSearch(){
 	}
 
 
-}*/
+}
 
 
 //Set Link & Submit Click Events 
 var displaylink = ge('displaylink');
 displaylink.addEventListener("click", getData);
-var clearLink = ge('clear');
-clearLink.addEventListener("click", clearLogs);
 var save = ge('submit');
 save.addEventListener("click", validate);
 /*var search = ge('search');

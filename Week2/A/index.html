@@ -28,80 +28,182 @@
 <div data-role="page" id="home">
 
 		<div data-role="header" data-position="fixed" data-theme="b">
-			<h1>About		</h1>
+			<h1>DVD Libriary</h1>
 		</div>
 
 		<div data-role="content">
 		  <p>If you love movies, you probably own a lot of them. If you own a lot of dvds its likely that friends and family borrow them from time to time.</p>
 			<p>This application is here to help you keep a record of your dvds you have in your library and make sure you don't loose track of them.</p>
-			<p><a href="#stage" data-role="button" data-theme="b">Enter</a></p>
-  </div>
-
-</div>
-    
-<!--Staging Page-->
-<div data-role="page" id="stage" data-add-back-btn="true">
-    
-    	<div data-role="header" data-position="fixed" data-theme="b">
-        	<h1>Choices</h1>
-    	</div>
+        </div>
         
-        <!--Choices-->
-        <div data-role="content">
-			<h2>Choose</h2>
-			<p>What do you want to do?</p>
-		</div>
-        
-        <div class="ui-grid-a">
-        	<a href="#browse" data-transition="slide">
-            <div class="ui-block-a"><div class="ui-bar ui-bar-a">Browse</div></div>
-            </a>
-            <a href="#add" data-transition="slide">
-            <div class="ui-block-b"><div class="ui-bar ui-bar-b">Add</div></div>
-            </a>
-            <a href="#genres" data-transition="slide">
-            <div class="ui-block-a"><div class="ui-bar ui-bar-b">Genres</div></div>
-            </a>
-            <a href="#search" data-transition="slide">
-            <div class="ui-block-b"><div class="ui-bar ui-bar-a">Search</div></div>
-            </a>
-       </div>  
-       
 <!--Footer: Nav bar-->            
-		<div data-role="footer" data-position="fixed" data-id="browse" data-theme="b">
+		<div data-role="footer" data-position="fixed" data-id="loans" data-theme="b">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
 					<li><a href="#home" id="home" data-icon="home">About</a></li>
-					<li><a href="#genres" id="genres" data-icon="star">Genres</a></li>
+					<li><a href="#genres" id="genres" data-icon="grid">Genres</a></li>
 					<li><a href="#add" id="add" data-icon="plus">Add Movie</a></li>	
-                    <li><a href="#search" id="search" data-icon="search">Search</a></li>	
+                    <li><a href="#browse" id="browse" data-icon="search">Search</a></li>
+                    <li><a href="#loans" id="loans" data-icon="alert">Loans</a></li>	
+				</ul>
+			</div>
+		</div>
+
+</div>
+    
+<!--Loans Page-->
+<div data-role="page" id="loans" data-add-back-btn="true">
+    
+    	<div data-role="header" data-position="fixed" data-theme="b">
+        	<h1>Loans</h1>
+    	</div>
+        
+       
+<!--A list of all the users dvd's out of the library, on loan to friend or family.-->        
+        <div data-role="content">
+        
+        	<ul data-role="listview" data-filter="true">
+            	
+            	<li>
+                    <a href="#thematrix" data-transition="slide">
+                         <img src="images/matrix.jpg" width="70" />
+                         <h3>The Matrix</h3>
+                    </a>
+            	</li>
+                
+           		<li>
+                	<a href="#40yrvirgin" data-transition="slide">
+                    	<img src="images/40yrvirgin.jpg" width="70" />
+                    	<h3>The 40 Year Old Virgin</h3>
+                  </a>
+              	</li>
+                
+                <li>
+                	<a href="#americanpres" data-transition="slide">
+                    	<img src="images/americanpres.jpg" width="70" />
+                    	<h3>The American President</h3>
+                  </a>
+              </li>
+                
+                <li>
+                	<a href="#augustrush" data-transition="slide">
+                    	<img src="images/augustrush.jpg" width="70" />
+                    	<h3>August Rush</h3>
+                  </a>
+              </li>
+                
+                <li>
+                	<a href="#avatar" data-transition="slide">
+                    	<img src="images/avatar.jpg" width="70" />
+                    	<h3>Avatar</h3>
+                  </a>
+              </li>
+                
+              
+                <li>
+                	<a href="#cars2" data-transition="slide">
+                    	<img src="images/cars2.jpg" width="70" />
+                    	<h3>Cars 2</h3>
+                  </a>
+              </li>
+                
+                <li>
+                	<a href="#chipwrecked" data-transition="slide">
+                    	<img src="images/chipwrecked.jpg" width="70" />
+                    	<h3>Alvin and The Chipmunks: Chipwrecked</h3>
+                  </a>
+              </li>
+                
+                <li>
+                	<a href="#lorax" data-transition="slide">
+                    	<img src="images/lorax.jpg" width="70" />
+                    	<h3>Dr. Suess' The Lorax</h3>
+                  </a>
+              </li>
+                
+                <li>
+                	<a href="#rocker" data-transition="slide">
+                    	<img src="images/rocker.jpg" width="70" />
+                    	<h3>Rocker</h3>
+                  </a>
+              </li>
+                
+                <li>
+                	<a href="#signs" data-transition="slide">
+                        <img src="images/signs.jpg" width="70" />
+                        <h3>Signs</h3>
+                  	</a>
+            	</li>
+                
+            </ul>
+            
+        </div>
+         
+<!--Footer: Nav bar-->            
+		<div data-role="footer" data-position="fixed" data-id="loans" data-theme="b">
+			<div data-role="navbar" data-position="fixed">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home">About</a></li>
+					<li><a href="#genres" id="genres" data-icon="grid">Genres</a></li>
+					<li><a href="#add" id="add" data-icon="plus">Add Movie</a></li>	
+                    <li><a href="#browse" id="browse" data-icon="search">Search</a></li>
+                    <li><a href="#loans" id="loans" data-icon="alert">Loans</a></li>	
 				</ul>
 			</div>
 		</div>  
         
 </div>
+
     
 <!--Add Movie Page-->
 <div data-role="page" id="add" data-add-back-btn="true">
     
-    	<div data-role="header" data-position="fixed" data-theme="e">
+    	<div data-role="header" data-position="fixed" data-theme="b">
         	<h1>Add Movie</h1>
        	</div>
         
             <div data-role="content">
-                <form action="#"  method="post" id="add">
-                    <h2><span>*Fields are required</span></h2>
-                    <ul id="errors"></ul>
-                    <ul id="questions">
-                        <li id="select"><label for="genre">*Add Genre:</label></li>
-                        <li><label for="title">*Movie Title: </label><input type="text" id="title" /></li>
-                        <li><label for="rating">Rating: </label><input type="range" min="0" max="100" id="rating" data-theme="e"></li>
-                    </ul>
-                    <ul class="checkbox">
-                        <li><input type="radio" id="in" value="in" name="Status" /><label for="in">In</label></li>
-                        <li><input type="radio" id="out" value="out" name="Status" /><label for="out">Out</label></li>
-                    </ul>
-                    <input type="button" value="Add Movie" id="submit" data-theme="b"/>
+                <form action="#"  method="post" id="addmovie">
+                    <h2>*Fields are required</h2>
+                    
+                    
+                        <div data-role="fieldcontain">
+                        	<label for="genre">*Genre:</label>
+                            <select name="genre" id="genre">
+                            	<option data-placeholder="true">Please Select One</option>
+                            	<option value="action">Action Adventure</option>
+                                <option value="comedy">Comedy</option>
+                                <option value="drama">Drama</option>
+                                <option value="horror">Horror</option>
+                                <option value="kids">Kids and Family</option>
+                                <option value="romance">Romance</option>
+                                <option value="scifi">Science Fiction</option>
+                                <option value="thriller">Thriller</option>
+                            </select>
+                        </div>
+                        
+                        <div data-role="fieldcontain">
+                            <label for="title">*Movie Title: </label>
+                            <input type="text" id="title" />
+                        </div>
+                        
+                        <div data-role="fieldcontain">
+                        	<label for="rating">Rating: </label>
+                            <input type="range" min="0" max="10" id="rating" data-theme="b">
+                   		</div>
+
+						 <div data-role="fieldcontain">
+                        	<label for="status">Status: </label>
+                            <select data-role="slider">
+                            	<option value="off">In</option>
+                                <option value="on">Out</option>
+                             </select>
+                   		</div>     
+                        
+                        <div data-role="fieldcontain">
+                            <input type="reset" value="Reset" data-theme="a"/>                   
+                            <input type="button" value="Add Movie" id="submit" data-theme="b"/>
+                       	</div>
                 </form>
             </div>
             
@@ -110,9 +212,10 @@
 			<div data-role="navbar" data-position="fixed">
 				<ul>
 					<li><a href="#home" id="home" data-icon="home">About</a></li>
-					<li><a href="#genres" id="genres" data-icon="star">Genres</a></li>
+					<li><a href="#genres" id="genres" data-icon="grid">Genres</a></li>
 					<li><a href="#add" id="add" data-icon="plus">Add Movie</a></li>	
-                    <li><a href="#search" id="search" data-icon="search">Search</a></li>	
+                    <li><a href="#browse" id="browse" data-icon="search">Search</a></li>
+                    <li><a href="#loans" id="loans" data-icon="alert">Loans</a></li>
 				</ul>
 			</div>
 		</div>
@@ -149,6 +252,9 @@
                 <li><a href="#romance" data-transition="slide">
 					<h2>Romance</h2><span class="ui-li-count">3</span>
 				</a></li>
+                <li><a href="#scifi" data-transition="slide">
+					<h2>Sci-Fi / Fantacy</h2><span class="ui-li-count">3</span>
+				</a></li>
                 <li><a href="#thriller" data-transition="slide">
 					<h2>Thriller</h2><span class="ui-li-count">3</span>
 				</a></li>
@@ -160,9 +266,10 @@
 			<div data-role="navbar" data-position="fixed">
 				<ul>
 					<li><a href="#home" id="home" data-icon="home">About</a></li>
-					<li><a href="#genres" id="genres" data-icon="star">Genres</a></li>
+					<li><a href="#genres" id="genres" data-icon="grid">Genres</a></li>
 					<li><a href="#add" id="add" data-icon="plus">Add Movie</a></li>	
-                    <li><a href="#search" id="search" data-icon="search">Search</a></li>	
+                    <li><a href="#browse" id="browse" data-icon="search">Search</a></li>
+                    <li><a href="#loans" id="loans" data-icon="alert">Loans</a></li>	
 				</ul>
 			</div>
 		</div>
@@ -336,14 +443,27 @@
 			<div data-role="navbar" data-position="fixed">
 				<ul>
 					<li><a href="#home" id="home" data-icon="home">About</a></li>
-					<li><a href="#genres" id="genres" data-icon="star">Genres</a></li>
+					<li><a href="#genres" id="genres" data-icon="grid">Genres</a></li>
 					<li><a href="#add" id="add" data-icon="plus">Add Movie</a></li>	
-                    <li><a href="#search" id="search" data-icon="search">Search</a></li>	
+                    <li><a href="#browse" id="browse" data-icon="search">Search</a></li>
+                    <li><a href="#loans" id="loans" data-icon="alert">Loans</a></li>	
 				</ul>
 			</div>
 		</div>
         
 	</div>
+    
+    <!--The Matrix-->
+<div data-role="page" id="thematrix" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Info</h1></div>
+			<!--Log content.-->
+			<div data-role="content" >				
+				<p><img src="images/matrix.jpg" width="180" height="270"></p>
+				<h3>Status: Out</h3>
+				<h3>Rating: 10</h3>
+				<h3>Borrower: David Brown</h3>
+			</div>
+		</div>
 
 	<!-- JavaScript under here -->
 <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
