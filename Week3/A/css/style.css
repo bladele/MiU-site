@@ -1,8 +1,5 @@
-/* write your CSS in here */
+/* Custome Styles */
 
-#home .ui-grid-a div{text-align:center;}
+label.error{display: block; margin:10px 0; color: #cc0000;}
 
-#home .ui-grid-a .ui-bar{padding:50px 20px;}
-
-
-
+#logerrorslink{display: none;}

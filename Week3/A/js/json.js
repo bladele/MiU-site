@@ -1,122 +1,182 @@
 var json = {
-	"movie1": {
-		"genre": ["Genre: ", "Sci-Fi / Fantacy"],
-		"title": ["Title: ", "The Matrix"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "10"],
+	"loveLog1": {
+		"eventTypes": ["Event Types: ", "Agape[of the soul]"],
+		"title": ["Title: ", "My First Log"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-15"],
+		"role": ["Role: ", "Recipient"],
+		"wow": ["Wow Factor: ", "80"],
+		"notes": ["The Details: ", "Watching the sunrise this morning was breathtaking."]
 	},
-	"movie2": {
-		"genre": ["Genre: ", "Comedy"],
-		"title": ["Title: ", "The 40 Year Old Virgin"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "8"],
+	"loveLog2": {
+		"eventTypes": ["Event Types: ", "Eros[of passion]"],
+		"title": ["Title: ", "I Love My Job!"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-16"],
+		"role": ["Role: ", "recipient"],
+		"wow": ["Wow Factor: ", "90"],
+		"notes": ["The Details: ", "I feel fortunate today, to have a job that I feel so passionate about."]
 	},
-	"movie3": {
-		"genre": ["Genre: ", "Drama"],
-		"title": ["Title: ", "The American President"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "7"],
+	"loveLog3": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie4": {
-		"genre": ["Genre: ", "Drama"],
-		"title": ["Title: ", "August Rush"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "7"],
+	"loveLog4": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie5": {
-		"genre": ["Genre: ", "Action Adventure"],
-		"title": ["Title: ", "Avatar"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "10"],
+	"loveLog5": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie6": {
-		"genre": ["Genre: ", "Action Adventure"],
-		"title": ["Title: ", "Captain America"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "8"],
+	"loveLog6": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie7": {
-		"genre": ["Genre: ", "Action Adventure"],
-		"title": ["Title: ", "The Book of Eli"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "9"],
+	"loveLog7": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie8": {
-		"genre": ["Genre: ", "Kids and Family"],
-		"title": ["Title: ", "Cars 2"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "8"],
+	"loveLog8": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie9": {
-		"genre": ["Genre: ", "Kids and Family"],
-		"title": ["Title: ", "Alvin and the Chipmunks: Chipwrecked"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "6"],
+	"loveLog9": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie10": {
-		"genre": ["Genre: ", "Romance"],
-		"title": ["Title: ", "Dan In Real Life"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "9"],
+	"loveLog10": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie11": {
-		"genre": ["Genre: ", "Horror"],
-		"title": ["Title: ", "I Am Lengend"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "6"],
+	"loveLog11": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie12": {
-		"genre": ["Genre: ", "Kids and Family"],
-		"title": ["Title: ", "Dr. Seuss' The Lorax"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "8"],
+	"loveLog12": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie13": {
-		"genre": ["Genre: ", "Sci-Fi / Fantacy"],
-		"title": ["Title: ", "The Matrix Reloaded"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "9"],
+	"loveLog13": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie14": {
-		"genre": ["Genre: ", "Sci-Fi / Fantacy"],
-		"title": ["Title: ", "The Matrix Revolutions"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "9"],
+	"loveLog14": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie15": {
-		"genre": ["Genre: ", "Comedy"],
-		"title": ["Title: ", "The Rocker"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "9"],
+	"loveLog15": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie16": {
-		"genre": ["Genre: ", "Thriller"],
-		"title": ["Title: ", "Signs"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "8"],
+	"loveLog16": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie17": {
-		"genre": ["Genre: ", "Sci-Fi / Fantacy"],
-		"title": ["Title: ", "The Animatrix"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "8"],
+	"loveLog17": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie18": {
-		"genre": ["Genre: ", "Romance"],
-		"title": ["Title: ", "The Vow"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "8"],
+	"loveLog18": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie19": {
-		"genre": ["Genre: ", "Thriller"],
-		"title": ["Title: ", "The DaVinci Code"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "7"],
+	"loveLog19": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	},
-	"movie20": {
-		"genre": ["Genre: ", "Drama"],
-		"title": ["Title: ", "Shall We Dance"],
-		"status": ["Status: ", "In"],
-		"rating": ["Rating: ", "7"],
+	"loveLog20": {
+		"eventTypes": ["Event Types: ", "Philia[of the mind]"],
+		"title": ["Title: ", "Bought My Wife a Gift"],
+		"location": ["Location: ", "Concord, NC"],
+		"date": ["Date: ", "2011-06-17"],
+		"role": ["Role: ", "donor"],
+		"wow": ["Wow Factor: ", "85"],
+		"notes": ["The Details: ", "Jenny is going to be so jazzed about what I got her for her birthday!"]
 	}
 }

@@ -1,502 +1,868 @@
 <!doctype html>  
 <html lang="en">
-  <head>
+<head>
 
-    	<meta charset="utf-8">
-    	
-    	<title>My DVD Library</title>
-    	
-    	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
-    	<meta name="HandheldFriendly" content="True">
-    	<meta name="MobileOptimized" content="320"/>
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	
-    	<!-- Mobile IE needs ClearType for smoothing fonts -->
-    	<meta http-equiv="cleartype" content="on">
-    	
-    	<!-- StyleSheets under here -->
-    	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-    	<link rel="stylesheet" type="text/css" href="css/style.css">
-    	<style type="text/css">
-    	#home div p {text-align: center;}
-      #home div p {text-align: justify;}
-      </style>
-    	
-    	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
-    	<script src="js/libs/modernizr.custom.min.js"></script>
-
-  </head>
+	<meta charset="utf-8">
+	
+	<title>Love Log</title>
 
 
-  <body>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
 
-    <!--Intro page of app. Intro to user.-->
-    <div data-role="page" id="home">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
 
-    	<div data-role="header" data-position="fixed" data-theme="b">
-    		<h1>My DVD Libriary</h1>
-    	</div>
+</head>
 
-      <div data-role="content">
-    		<p><img src="images/logo1.png" width="262" height="157" align="middle"></p>
-        <p>If you love movies, you probably own a lot of them. If you own a lot of dvds its likely that friends and family borrow them from time to time.
-        </p>
-        <p>This application is here to help you keep a record of your dvds you have in your library and make sure you don't loose track of them.
-        </p>
-      </div>
-            
-    <!--Footer: Nav bar-->            
-    	<div data-role="footer" data-position="fixed" data-id="loans" data-theme="b">
-    		<div data-role="navbar" data-position="fixed">
-    		  <ul>
-    				<li><a href="#home" id="home" data-icon="home">About</a></li>
-    				<li><a href="#genres" id="genres" data-icon="grid">Genres</a></li>
-    				<li><a href="#addmovie" id="addmovie" data-icon="plus">Add Movie</a></li>	
-            <li><a href="#browse" id="browse" data-icon="search">Search</a></li>
-            <li><a href="#loans" id="loans" data-icon="alert">Loans</a></li>	
-    			</ul>
-    		</div>
-    	</div>
-
-    </div>
-        
-    <!--Loans Page-->
-    <div data-role="page" id="loans" data-add-back-btn="true">
-        
-      <div data-role="header" data-position="fixed" data-theme="b">
-        <h1>Loans</h1>
-      </div>
-            
-           
-    <!--A list of all the users dvd's out of the library, on loan to friend or family.-->        
-      <div data-role="content">
-            
-          <ul data-role="listview" data-filter="true">
-                	
-            <li>
-              <a href="#thematrix" data-transition="slide">
-                <img src="images/matrix.jpg" width="70" />
-                <h3>The Matrix</h3>
-              </a>
-            </li>
-                    
-            <li>
-              <a href="#40yrvirgin" data-transition="slide">
-                <img src="images/40yrvirgin.jpg" width="70" />
-                <h3>The 40 Year Old Virgin</h3>
-              </a>
-            </li>
-                    
-            <li>
-              <a href="#americanpres" data-transition="slide">
-                <img src="images/americanpres.jpg" width="70" />
-                <h3>The American President</h3>
-              </a>
-            </li>
-                    
-            <li>
-              <a href="#augustrush" data-transition="slide">
-                <img src="images/augustrush.jpg" width="70" />
-                <h3>August Rush</h3>
-              </a>
-            </li>
-                    
-            <li>
-              <a href="#avatar" data-transition="slide">
-                <img src="images/avatar.jpg" width="70" />
-                <h3>Avatar</h3>
-              </a>
-            </li>
-                    
-                  
-            <li>
-              <a href="#cars2" data-transition="slide">
-                <img src="images/cars2.jpg" width="70" />
-                <h3>Cars 2</h3>
-              </a>
-            </li>
-                    
-            <li>
-              <a href="#chipwrecked" data-transition="slide">
-                <img src="images/chipwrecked.jpg" width="70" />
-                <h3>Alvin and The Chipmunks: Chipwrecked</h3>
-              </a>
-            </li>
-                    
-            <li>
-              <a href="#lorax" data-transition="slide">
-                <img src="images/lorax.jpg" width="70" />
-                <h3>Dr. Suess' The Lorax</h3>
-              </a>
-            </li>
-                    
-            <li>
-              <a href="#rocker" data-transition="slide">
-                <img src="images/rocker.jpg" width="70" />
-                <h3>Rocker</h3>
-              </a>
-            </li>
-                    
-            <li>
-              <a href="#signs" data-transition="slide">
-                <img src="images/signs.jpg" width="70" />
-                <h3>Signs</h3>
-              </a>
-            </li>
-                    
-          </ul>
-                
-      </div>
-             
-    <!--Footer: Nav bar-->            
-    	<div data-role="footer" data-position="fixed" data-id="loans" data-theme="b">
-    		<div data-role="navbar" data-position="fixed">
-    			<ul>
-    				<li><a href="#home" id="home" data-icon="home">About</a></li>
-    				<li><a href="#genres" id="genres" data-icon="grid">Genres</a></li>
-    				<li><a href="#addmovie" id="addmovie" data-icon="plus">Add Movie</a></li>	
-            <li><a href="#browse" id="browse" data-icon="search">Search</a></li>
-            <li><a href="#loans" id="loans" data-icon="alert">Loans</a></li>	
-    			</ul>
-    		</div>
-    	</div>  
-            
-    </div>
-
-        
-    <!--Add Movie Page-->
-    <div data-role="page" id="addmovie" data-add-back-btn="true">
-        
-      <div data-role="header" data-position="fixed" data-theme="b">
-        <h1>Add Movie</h1>
-      </div>
-            
-      <div data-role="content">
-        <form action="#"  method="post" id="addmovieform">
-          <h2>*Fields are required</h2>
-                        
-          <div data-role="fieldcontain">
-            <label for="genre">*Genre:</label>
-              <select name="genre" id="genre" data-native-menu="true" class="required">
-                <option data-placeholder="true" value>Please Select One</option>
-                <option value="action">Action Adventure</option>
-                <option value="comedy">Comedy</option>
-                <option value="drama">Drama</option>
-                <option value="horror">Horror</option>
-                <option value="kids">Kids and Family</option>
-                <option value="romance">Romance</option>
-                <option value="scifi">Science Fiction</option>
-                <option value="thriller">Thriller</option>
-              </select>
-          </div>
-                            
-          <div data-role="fieldcontain">
-            <label for="title">*Movie Title: </label>
-            <input type="text" name="title" id="title" class="required" />
-          </div>
-                            
-          <div data-role="fieldcontain">
-            <label for="rating">Rating: </label>
-            <input type="range" name="rating" id="rating" min="0" max="10" id="rating" data-theme="b">
-          </div>
-
-    			<div data-role="fieldcontain">
-            <label for="status">Status: </label>
-              <select data-role="slider">
-                <option value="off">In</option>
-                <option value="on">Out</option>
-              </select>
-          </div>     
-                            
-          <div data-role="fieldcontain">
-            <input type="reset" value="Reset" data-theme="a"/>                   
-            <input type="button" value="Add Movie" id="submit" data-theme="b"/>
-          </div>
-
-        </form>
-                
-      </div>
-                
-    <!--Footer: Nav bar-->            
-    	<div data-role="footer" data-position="fixed" data-id="browse" data-theme="b">
-    		<div data-role="navbar" data-position="fixed">
-    			<ul>
-    					<li><a href="#home" id="home" data-icon="home">About</a></li>
-    					<li><a href="#genres" id="genres" data-icon="grid">Genres</a></li>
-    					<li><a href="#addmovie" id="addmovie" data-icon="plus">Add Movie</a></li>	
-              <li><a href="#browse" id="browse" data-icon="search">Search</a></li>
-              <li><a href="#loans" id="loans" data-icon="alert">Loans</a></li>
-    			</ul>
-    		</div>
-
-    	</div>
-    	
-    </div>
+<!-- Font from Google Web Fonts -->
+			<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC' rel='stylesheet' type='text/css'>
+			<style>
+				header {
+					font-family: 'IM Fell Great Primer SC', serif;
+				}
+				body{
+					font-family: 'IM Fell Great Primer SC', serif;
+				}
+			</style>
 
 
-    <!--Genres Page-->
-    <div data-role="page" id="genres" data-add-back-btn="true">
-        
-      <div data-role="header" data-position="fixed" data-theme="b">
-        <h1>Genres</h1>
-      </div>
-            
-    <!--My Lists of Categories-->
-    	<div data-role="content">
+<body>
 
-    		<ul data-role="listview" data-inset="true" data-theme="b">
+	<!--Intro page of app. Intro to user.-->
+	<div data-role="page" id="home">
 
-    			<li><h2>Browse by Genre</h2></li>
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<h1>Love Log</h1>
+		</div>
 
-    			<li>
-            <a href="#actadv" data-transition="slide">
-    				  <h2>Action Adventure</h2><span class="ui-li-count">4</span>
-            </a>
-          </li>
+		<div data-role="content">
+			<p>You already believe in love.</p>
+			<p>Live it!</p>
+			<p><a href="#myLogs" data-role="button" data-theme="b">Enter</a></p>
+		</div>
 
-    			<li>
-            <a href="#comedy" data-transition="slide">
-    				  <h2>Comedy</h2><span class="ui-li-count">2</span>
-            </a>
-          </li>
+		<div data-role="footer" data-position="fixed" data-id="logs" data-theme="a">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home">About</a></li>
+					<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
+					<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
+					<li><a href="#search" id="search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
 
-    			<li>
-            <a href="#drama" data-transition="slide">
-    				  <h2>Drama</h2><span class="ui-li-count">6</span>
-            </a>
-          </li>
+	</div>
 
-    			<li>
-            <a href="#horror" data-transition="slide">
-    				  <h2>Horror</h2><span class="ui-li-count">5</span>
-            </a>
-    			</li>
+	<!--Page 2:My Logs, Where user can browse logs.-->
+	<div data-role="page" id="myLogs" data-add-back-btn="true" >
 
-    			<li>
-            <a href="#kidfam" data-transition="slide">
-    					<h2>Kids and Family</h2><span class="ui-li-count">3</span>
-            </a>
-          </li>
-                    
-          <li>
-            <a href="#romance" data-transition="slide">
-    				  <h2>Romance</h2><span class="ui-li-count">3</span>
-            </a>
-          </li>
-                    
-          <li>
-            <a href="#scifi" data-transition="slide">
-    			   <h2>Sci-Fi / Fantacy</h2><span class="ui-li-count">3</span>
-            </a>
-          </li>
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>My Logs</h1>
+		</div>
 
-          <li>
-            <a href="#thriller" data-transition="slide">
-    				  <h2>Thriller</h2><span class="ui-li-count">3</span>
-            </a>
-          </li>
 
-    		</ul>
+		<!--My Lists of Categories-->
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-theme="b">
+				<li><h2>Choose An Event Type</h2>
+					<p>The Nature of Your Experience.</p></li>
+				<li><a href="#agape" data-transition="slide">
+					<h2>Agape: Of the soul</h2><span class="ui-li-count">4</span>
+				</a></li>
+				<li><a href="#eros" data-transition="slide">
+					<h2>Eros: Of passion</h2><span class="ui-li-count">2</span>
+				</a></li>	
+				<li><a href="#philia" data-transition="slide">
+					<h2>Philia: Of the mind</h2><span class="ui-li-count">6</span>
+				</a></li>
+				<li><a href="#storge" data-transition="slide">
+					<h2>Storge: Parental</h2><span class="ui-li-count">5</span>
+				</a></li>
+				<li><a href="#xenia" data-transition="slide">
+					<h2>Xenia: Hospitality</h2><span class="ui-li-count">3</span>
+				</a></li>
+			</ul>
+		</div>
 
-    	</div>
-            
-    <!--Footer: Nav bar-->            
-    	<div data-role="footer" data-position="fixed" data-id="browse" data-theme="b">
+	<!-- This would be where I would have code to retreive JSON data, but the assignment call for lists to be hard-coded.	
 
-    		<div data-role="navbar" data-position="fixed">
-    		  <ul>
-    				<li><a href="#home" id="home" data-icon="home">About</a></li>
-    				<li><a href="#genres" id="genres" data-icon="grid">Genres</a></li>
-    				<li><a href="#addmovie" id="add" data-icon="plus">Add Movie</a></li>	
-            <li><a href="#browse" id="browse" data-icon="search">Search</a></li>
-            <li><a href="#loans" id="loans" data-icon="alert">Loans</a></li>	
-    			</ul>
-    		</div>
+			<div data-role="content">
+			<ul data-role="listview" data-inset="true">
+				<cfoutput query="categories">
+					<li></li>
+			</ul>
 
-    	</div>
-    	
-    </div>
+		<div data-role="content">
+			<a href="#" id="displaylink">My Logs</a>
+		</div> 
+
+		</div>  
+
+	--> 
+
+		
+
+		<div data-role="footer" data-position="fixed" data-id="logs" data-theme="b">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home">About</a></li>
+					<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
+					<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
+					<li><a href="#search" id="search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<!--Page 3: Create New Log -->
+	<div data-role="page" id="newLog" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed" data-theme="e">
+			<h1>New Log</h1>
+		</div>
+
+			<div data-role="content">
+
+				<form action="#"  method="post" id="lovelogform">
+
+					<h3><span>*Fields are required</span></h3>
+					<ul id="errors"></ul>
+					
+						<div data-role="fieldcontain">
+							<label for="type">*Event Type</label>
+							<select name="type" id="type" data-native-menu="false" class="required">
+								<option data-placeholder="true" value>*Choose An Event Type</option>
+								<option value="agape">Agape: Of the Soul</option>
+								<option value="eros">Eros: Of Passion</option>
+								<option value="philia">Philia: Of the Mind</option>
+								<option value="storge">Storge: Parental</option>
+								<option value="xenia">Xenia: Hospitality</option>
+							</select>
+						</div>
+
+						<div data-role="fieldcontain">
+							<label for="title">*Event Title</label>
+							<input type="text" name="title" id="title" class="required" />
+						</div>
+
+						<div data-role="fieldcontain">
+							<label for="location">Location</label>
+							<input type="text" name="location" id="location"  />
+						</div>
+
+						<div data-role="fieldcontain">
+							<fieldset data-role="controlgroup" data-type="horizontal" >
+								<legend>*Your Role</legend>
+								<input type="radio" value="recipient" name="role" id="role-1" class="required" />
+								<label for="role-1">Recipient</label>
+								<input type="radio" value="donor" name="role" id="role-2" class="required" />
+								<label for="role-2">Donor</label>
+							</fieldset>
+						</div>
+
+						
+						<div data-role="fieldcontain">
+							<label for="wow">Wow Factor</label>
+							<input type="range" name="wow" id="wow" value="0" min="0" max="100" />
+						</div>
+						
+						<div data-role="fieldcontain">
+							<label for="notes">The Details</label>
+							<textarea></textarea>
+						</div>
+				
+				<div data-role="fieldcontain">
+					<input type="reset" value="Reset" data-theme="a" />
+					<input type="submit" value="Save Log" data-theme="b" />
+				</div>
+
+				<a href="#newLogerrors" id="logerrorslink" data-rel="dialog" data-transition="flip">Open Errors</a>
+
+			</form>
+		</div>
+
+		<div data-role="footer" data-position="fixed" data-id="logs" data-theme="e">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home">About</a></li>
+					<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
+					<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
+					<li><a href="#search" id="search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>		
+
+	</div>
+
+	<!--Validation dialog -->
+	<div data-role="dialog" id="newLogerrors">
+		
+		<div data-role="header" data-position="fixed" data-theme="e">
+			<h1>Missing Fields</h1>
+		</div>
+
+		<div data-role="content">
+			<ul>
+				<li>Test.</li>
+			</ul>
+		</div>
+	</div>
+
+	
+
+
+	<!--Search Page-->
+	<div data-role="page" id="search" data-add-back-btn="true" >
+
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>Search Logs</h1>
+		</div>
+
+
+		<form action = "#"  method = "post" id="loveLog">
+			<fieldset id="logFieldset">
+				<legend>Search Logs</legend>
+				<ul id="errors"></ul>
+				<ul id="questions">
+					<li id="select"><label for="eventTypes">Seach Categories:</label></li>
+					<li><label for="searchTerm">Search Term: </label><input type="text" id="search"  /></li>
+				</ul>
+			</fieldset>
+			<input type="button" value="Search Logs" id="search" />
+		</form>
+
+		<div id= "results"></div>
+		
+
+		<div data-role="footer" data-position="fixed" data-id="logs" data-theme="b">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home">About</a></li>
+					<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
+					<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
+					<li><a href="#" id="search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
 
 
 
-    <!--Browse Page-->
-    <div data-role="page" id="browse" data-add-back-btn="true">
-        
-      <div data-role="header" data-position="fixed" data-theme="b">
-        <h1>All DVD's</h1>
-      </div>
-            
-    <!--All the movies in the directory-->        
-      <div data-role="content">
-            
-        <ul data-role="listview" data-filter="true">
-                	
-          <li>
-            <a href="#thematrix" data-transition="slide">
-              <img src="images/matrix.jpg" width="70" />
-              <h3>The Matrix</h3>
-            </a>
-          </li>
-                    
-          <li>
-            <a href="#theanimatrix" data-transition="slide">
-              <img src="images/theanimatrix.jpg" width="70" />
-              <h3>The Animatrix</h3>
-            </a>
-          </li>
-                    
-          <li>
-            <a href="#thematrixreloaded" data-transition="slide">
-              <img src="images/matrixreloaded.jpg" width="70" />
-              <h3>The Matrix Reloaded</h3>
-            </a>
-          </li>
-                    
-          <li>
-            <a href="#thematrixrevolutions" data-transition="slide">
-              <img src="images/matrixrevolutions.jpg" width="70" />
-              <h3>The Matrix Revolutions</h3>
-            </a>
-          </li>
-                    
-          <li>
-            <a href="#40yrvirgin" data-transition="slide">
-              <img src="images/40yrvirgin.jpg" width="70" />
-              <h3>The 40 Year Old Virgin</h3>
-            </a>
-          </li>
-                    
-          <li>
-            <a href="#americanpres" data-transition="slide">
-              <img src="images/americanpres.jpg" width="70" />
-              <h3>The American President</h3>
-            </a>
-          </li>
-                    
-          <li>
-            <a href="#augustrush" data-transition="slide">
-              <img src="images/augustrush.jpg" width="70" />
-              <h3>August Rush</h3>
-            </a>
-          </li>
-                    
-          <li>
-            <a href="#avatar" data-transition="slide">
-              <img src="images/avatar.jpg" width="70" />
-              <h3>Avatar</h3>
-            </a>
-          </li>
-                    
-                    <li>
-                    	<a href="#bookofeli" data-transition="slide">
-                        	<img src="images/bookofeli.jpg" width="70" />
-                        	<h3>The Book of Eli</h3>
-                      </a>
-                  </li>
-                    
-                    <li>
-                    	<a href="#captainamerica" data-transition="slide">
-                        	<img src="images/captainamerica.jpg" width="70" />
-                        	<h3>Captain America</h3>
-                      </a>
-                  </li>
-                    
-                    <li>
-                    	<a href="#cars2" data-transition="slide">
-                        	<img src="images/cars2.jpg" width="70" />
-                        	<h3>Cars 2</h3>
-                      </a>
-                  </li>
-                    
-                    <li>
-                    	<a href="#chipwrecked" data-transition="slide">
-                        	<img src="images/chipwrecked.jpg" width="70" />
-                        	<h3>Alvin and The Chipmunks: Chipwrecked</h3>
-                      </a>
-                  </li>
-                    
-                    <li>
-                    	<a href="#dan" data-transition="slide">
-                        	<img src="images/dan.jpg" width="70" height="106" />
-                        	<h3>Dan In Real Life</h3>
-                      </a>
-                  </li>
-                    
-                    <li>
-                    	<a href="#legend" data-transition="slide">
-                        	<img src="images/legend.jpg" width="70" />
-                        	<h3>I Am Legend</h3>
-                      </a>
-                  </li>
-                    
-                    <li>
-                    	<a href="#lorax" data-transition="slide">
-                        	<img src="images/lorax.jpg" width="70" />
-                        	<h3>Dr. Suess' The Lorax</h3>
-                      </a>
-                  </li>
-                    
-                    <li>
-                    	<a href="#rocker" data-transition="slide">
-                        	<img src="images/rocker.jpg" width="70" />
-                        	<h3>Rocker</h3>
-                      </a>
-                  </li>
-                    
-                    <li>
-                    	<a href="#signs" data-transition="slide">
-                        	<img src="images/signs.jpg" width="70" />
-                        	<h3>Signs</h3>
-                      </a>
-                  </li>
-                    
-                    <li>
-                    	<a href="#vow" data-transition="slide">
-                        	<img src="images/vow.jpg" width="70" height="105" />
-                        	<h3>The Vow</h3>
-                      </a>
-                  </li>
-                    
-        </ul>
-                
-      </div>
-      
-    <!--Footer: Nav bar-->            
-    	<div data-role="footer" data-position="fixed" data-id="browse" data-theme="b">
 
-    		<div data-role="navbar" data-position="fixed">
-    				<ul>
-    					<li><a href="#home" id="home" data-icon="home">About</a></li>
-    					<li><a href="#genres" id="genres" data-icon="grid">Genres</a></li>
-    					<li><a href="#addmovie" id="addmovie" data-icon="plus">Add Movie</a></li>	
-              <li><a href="#browse" id="browse" data-icon="search">Search</a></li>
-              <li><a href="#loans" id="loans" data-icon="alert">Loans</a></li>	
-    				</ul>
-    		</div>
+		<!--Agape Category Page-->
+		<div data-role="page" id="agape" data-add-back-btn="true">
 
-    	</div>
-            
-    </div>
-        
-        <!--The Matrix-->
-    <div data-role="page" id="thematrix" data-add-back-btn="true">
-    			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Info</h1></div>
-    			<!--Movie Info-->
-    			<div data-role="content" >				
-    				<p><img src="images/matrix.jpg" width="180" height="270"></p>
-    				<h3>Status: Out</h3>
-    				<h3>Rating: 10</h3>
-    				<h3>Borrower: David Brown</h3>
-    			</div>
-    </div>
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Agape</h1></div>
 
-    <!-- JavaScript under here -->
-    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-    <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="js/json.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+			<!--List of logs under category.-->
+			<div data-role="content" >
 
-  </body>
+				<ul data-role="listview" data-filter="true">
+					
+					<li>
+						<a href="#a-log1" data-transition="slide">
+						<h3>The World is a bueatiful place.</h3>
+						<p>Location: Concord, NC</p>
+						<span class="ui-li-aside"><p>06/12/12</p></span>
+						<p>Details: Watching the sunrise this morning was breathtaking.</p></a>
+					</li>
 
+					<li>
+						<a href="#a-log2" data-transition="slide">
+						<h3>Dogs are so cute sometimes.</h3>
+						<p>Location: Concord, NC</p>
+						<span class="ui-li-aside"><p>10/20/11</p></span>
+						<p>Details: Sometimes, I wonder what my dogs are thinking. Jill often looks at me with inquiring eyes.</p></a>
+					</li>
+
+					<li>
+						<a href="#a-log3" data-transition="slide">
+						<h3>Melody Gardot is an inspiration</h3>
+						<p>Location: Concord, NC</p>
+						<span class="ui-li-aside"><p>09/13/11</p></span>
+						<p>Details: Was listening to Melody Gardot's new album today. Love it!!</p></a>
+					</li>
+
+					<li>
+						<a href="#a-log4" data-transition="slide">
+						<h3>The Sky</h3>
+						<p>Location: Concord, NC</p>
+						<span class="ui-li-aside"><p>09/20/10</p></span>
+						<p>Details: I often find that that sky seems like a woderful painting. The often occurs at sunset.</p></a>
+					</li>
+
+				</ul>
+
+			</div>
+
+		
+			<div data-role="footer" data-position="fixed" data-id="logs" data-theme="b">
+				<div data-role="navbar" data-position="fixed">
+					<ul>
+						<li><a href="#home" id="home" data-icon="home">About</a></li>
+						<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
+						<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
+						<li><a href="#" id="clear" data-icon="delete">Clear</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<!--Agape Entry Page 1-->
+		<div data-role="page" id="a-log1" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Agape</h1></div>
+			<!--Log content.-->
+			<div data-role="content" >				
+				<span class="ui-li-aside"><h3>06/12/12</h3></span>
+				<h2>Title: The World is a bueatiful place.</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 85%</h2>
+				<h2>Details: Watching the sunrise this morning was breathtaking.</h2>				
+			</div>
+		</div>
+
+		<!--Agape Entry Page 2-->
+		<div data-role="page" id="a-log2" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Agape</h1></div>
+			<!--Log content.-->
+			<div data-role="content" >	
+				<span class="ui-li-aside"><h3>10/20/11</h3></span>
+				<h2>Title: Dogs are so cute sometimes.</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 70%</h2>
+				<h2>Details: Sometimes, I wonder what my dogs are thinking. Jill often looks at me with inquiring eyes.</h2>
+			</div>
+		</div>
+
+		<!--Agape Entry Page 3-->
+		<div data-role="page" id="a-log3" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Agape</h1></div>
+			<!--Log content.-->
+			<div data-role="content" >		
+				<span class="ui-li-aside"><h3>09/13/11</h3></span>
+				<h2>Title: Melody Gardot is an inspiration</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 95%</h2>
+				<h2>Details: Was listening to Melody Gardot's new album today. Love it!!</h2>					
+			</div>
+		</div>
+
+		<!--Agape Entry Page 4-->
+		<div data-role="page" id="a-log4" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Agape</h1></div>
+			<!--Log content.-->
+			<div data-role="content" >	
+				<span class="ui-li-aside"><h3>10/20/11</h3></span>
+				<h2>Title: The Sky</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 70%</h2>
+				<h2>Details: Sometimes, I wonder what my dogs are thinking. Jill often looks at me with inquiring eyes.</h2>	
+			</div>
+		</div>
+
+
+
+
+		<!--Eros Category Page-->
+		<div data-role="page" id="eros" data-add-back-btn="true">
+
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Eros</h1></div>
+
+				<!--List of logs under category.-->
+				<div data-role="content">
+
+					<ul data-role="listview" data-filter="true">
+						
+						<li>
+							<a href="#e-log1" data-transition="slide">
+							<h3>She is so beautiful</h3>
+							<h4>Location: Concord, NC</h4>
+							<span class="ui-li-aside"><p>05/01/12</p></span>
+							<p>Details: I find she is the most beautiful when she's not trying so hard. Caught her in refelective thought, sitting in her pajamas. She is so beautiful.</p></a>
+						</li>
+
+						<li>
+							<a href="#e-log2" data-transition="slide">
+							<h3>Bought my wife a gift.</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>08/01/11</p></span>
+							<p>Details: Jenny is going to be so jazzed about what I got her for her birthday!</p></a>
+						</li>
+
+					</ul>
+
+				</div>
+	
+			<div data-role="footer" data-position="fixed" data-id="logs" data-theme="b">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" id="home" data-icon="home">About</a></li>
+						<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
+						<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
+						<li><a href="#search" id="search" data-icon="search">Search</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+
+				<!--Eros Entry Page 1-->
+		<div data-role="page" id="e-log1" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Eros</h1></div>
+			<!--Log content.-->
+			<div data-role="content" >	
+				<span class="ui-li-aside"><h3>05/01/12</h3></span>
+				<h2>Title: She is so beautiful</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 90%</h2>
+				<h2>Details: I find she is the most beautiful when she's not trying so hard. Caught her in refelective thought, sitting in her pajamas. She is so beautiful.</h2>				
+			</div>
+		</div>
+
+		<!--Eros Entry Page 2-->
+		<div data-role="page" id="e-log2" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Eros</h1></div>
+			<!--Log content.-->
+			<div data-role="content" >					
+				<span class="ui-li-aside"><h3>08/01/11</h3></span>
+				<h2>Title: Bought my wife a gift.</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 85%</h2>
+				<h2>Details: Jenny is going to be so jazzed about what I got her for her birthday!</h2>
+			</div>
+		</div>
+
+
+
+
+
+		<!--Philia Category Page-->
+		<div data-role="page" id="philia" data-add-back-btn="true">
+
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Philia</h1></div>
+
+				<!--List of logs under category.-->
+				<div data-role="content">
+
+					<ul data-role="listview" data-filter="true">
+						
+						<li>
+							<a href="#p-log1" data-transition="slide">
+							<h3>Learning to code.</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>07/04/12</p></span>
+							<p>Details: I wasn't sure about how well I would do in the mobile development program at FSU. I have been pleasently surprised about how much pleasure I am starting to gain from looking at pages of code that I have writen. Still have a lot to learn, but I am now excited about it.</p></a>
+						</li>
+
+						<li>
+							<a href="#p-log2" data-transition="slide">
+							<h3>The Matrix rocks.</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>04/29/12</p></span>
+							<p>Details: This is such a great movie. It has a great message and commentary on human society as a whole. The whole saga is my all time favourite set of movies.</p></a>
+						</li>
+
+						<li>
+							<a href="#p-log3" data-transition="slide">
+							<h3>Conversations with Niran.</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>03/19/12</p></span>
+							<p>Details: Had another long conversation with Niran today. We always get into the most philosophical topics about society, and how we can best affect it with what we do.</p></a>
+						</li>
+
+						<li>
+							<a href="#p-log4" data-transition="slide">
+							<h3>Star Treck</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>12/30/11</p></span>
+							<p>Details: Hands down greatest tv show series ever created. Social commentary, philosophical narratives, action, drama, theres so much brain candy here. Just want to gorge on it all day.</p></a>
+						</li>
+
+						<li>
+							<a href="#p-log5" data-transition="slide">
+							<h3>Radio Lab</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>11/13/11</p></span>
+							<p>Details: Science on the radio? I would have thought this would be a snore fest. But the prodution is so well done, so creative, I find myself so drawn in. Love it!</p></a>
+						</li>
+
+						<li>
+							<a href="#p-log6" data-transition="slide">
+							<h3>NPR</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>10/26/11</p></span>
+							<p>Details: Hands down the last and single saving grace to news media. I never thought I would learn so much from news media. Very inteligent reporting.</p></a>
+						</li>
+
+					</ul>
+
+				</div>
+	
+			<div data-role="footer" data-position="fixed" data-id="logs" data-theme="b">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" id="home" data-icon="home">About</a></li>
+						<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
+						<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
+						<li><a href="#search" id="search" data-icon="search">Search</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<!--Philia Entry Page 1-->
+		<div data-role="page" id="p-log1" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Philia</h1></div>
+			<!--Storge content.-->
+			<div data-role="content" >
+				<span class="ui-li-aside"><h3>07/04/12</h3></span>
+				<h2>Title: Learning to code.</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 86%</h2>
+				<h2>Details: I wasn't sure about how well I would do in the mobile development program at FSU. I have been pleasently surprised about how much pleasure I am starting to gain from looking at pages of code that I have writen. Still have a lot to learn, but I am now excited about it.</h2>					
+			</div>
+		</div>
+
+		<!--Philia Entry Page 2-->
+		<div data-role="page" id="p-log2" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Philia</h1></div>
+			<!--Log content.-->
+			<div data-role="content" >					
+				<span class="ui-li-aside"><h3>04/29/12</h3></span>
+				<h2>Title: The Matrix rocks.</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 99%</h2>
+				<h2>Details: This is such a great movie. It has a great message and commentary on human society as a whole. The whole saga is my all time favourite set of movies.</h2>		
+			</div>
+
+		<!--Philia Entry Page 3-->
+		<div data-role="page" id="p-log3" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Philia</h1></div>
+			<!--Log content.-->
+			<div data-role="content" >					
+				<span class="ui-li-aside"><h3>03/19/12</h3></span>
+				<h2>Title: Conversations with Niran.</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Donor</h2>
+				<h2>Wow Factor: 78%</h2>
+				<h2>Details: Had another long conversation with Niran today. We always get into the most philosophical topics about society, and how we can best affect it with what we do.</h2>		
+			</div>
+
+		<!--Philia Entry Page 4-->
+		<div data-role="page" id="p-log4" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Philia</h1></div>
+			<!--Log content.-->
+			<div data-role="content" >		
+				<span class="ui-li-aside"><h3>10/20/11</h3></span>
+				<h2>Title: Star Treck</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 98%</h2>
+				<h2>Details: Hands down greatest tv show series ever created. Social commentary, philosophical narratives, action, drama, theres so much brain candy here. Just want to gorge on it all day.</h2>
+			</div>
+		</div>
+
+		<!--Philia Entry Page 5-->
+		<div data-role="page" id="p-log5" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Philia</h1></div>
+			<!--Log content.-->
+			<div data-role="content" >				
+				<span class="ui-li-aside"><h3>10/20/11</h3></span>
+				<h2>Title: Radio Lab.</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 95%</h2>
+				<h2>Details: Science on the radio? I would have thought this would be a snore fest. But the prodution is so well done, so creative, I find myself so drawn in. Love it!</h2>
+			</div>
+		</div>
+
+		<!--Philia Entry Page 6-->
+		<div data-role="page" id="p-log6" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Philia</h1></div>
+			<!--Log content.-->
+			<div data-role="content" >
+				<span class="ui-li-aside"><h3>10/26/11</h3></span>
+				<h2>Title: NPR</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 95%</h2>
+				<h2>Details: Hands down the last and single saving grace to news media. I never thought I would learn so much from news media. Very inteligent reporting.</h2>
+			</div>
+		</div>
+
+
+
+
+		<!--Storge Category Page-->
+		<div data-role="page" id="storge" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Storge</h1></div>
+
+				<!--List of logs under category.-->
+				<div data-role="content">
+
+					<ul data-role="listview" data-filter="true">
+						
+						<li>
+							<a href="#s-log1" data-transition="slide">
+							<h3>Cuddling with the kids</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>04/23/12</p></span>
+							<p>Details: There is nothing like the feeling of your kids cuddling with you on the couch. It's a hard feeling to describe; knowing the safety and love they feel and how it somehow reasures you more than it does them. Sigh....</p></a>
+						</li>
+
+						<li>
+							<a href="#s-log2" data-transition="slide">
+							<h3>So proud</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>03/10/12</p></span>
+							<p>Details: Listen to Audrey sing while playing the piano make me so proud.</p></a>
+						</li>
+
+						<li>
+							<a href="#s-log3" data-transition="slide">
+							<h3>Questions, questions.</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>01/04/12</p></span>
+							<p>Details: Ayo is always asking a million questions. "Why this?, why that?" His curiosity is growing, but it is exhausting 'cause he expects I have all the answers</p></a>
+						</li>
+
+						<li>
+							<a href="#s-log4" data-transition="slide">
+							<h3>Ayo's Birthday.</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>12/21/11</p></span>
+							<p>Details: Wow, he's already 4 years old. Where does the time go?</p></a>
+						</li>
+
+						<li>
+							<a href="#s-log5" data-transition="slide">
+							<h3>Audrey's gift.</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>11/25/11</p></span>
+							<p>Details: Can't wait to give Audrey her Christmas gift, the look on her face will priceless.</p></a>
+						</li>
+
+					</ul>
+
+				</div>
+	
+			<div data-role="footer" data-position="fixed" data-id="logs" data-theme="b">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" id="home" data-icon="home">About</a></li>
+						<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
+						<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
+						<li><a href="#search" id="search" data-icon="search">Search</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+
+		<!--Storge Entry Page 1-->
+		<div data-role="page" id="s-log1" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Storge</h1></div>
+			<!--Storge content.-->
+			<div data-role="content" >
+				<span class="ui-li-aside"><h3>04/23/12</h3></span>
+				<h2>Title: Cuddling with the kids</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 100%</h2>
+				<h2>Details: There is nothing like the feeling of your kids cuddling with you on the couch. It's a hard feeling to describe; knowing the safety and love they feel and how it somehow reasures you more than it does them. Sigh....</h2>					
+			</div>
+		</div>
+
+		<!--Storge Entry Page 2-->
+		<div data-role="page" id="s-log2" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Storge</h1></div>
+			<!--Storge content.-->
+			<div data-role="content" >
+				<span class="ui-li-aside"><h3>03/10/12</h3></span>
+				<h2>Title: So proud</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 98%</h2>
+				<h2>Details: Listen to Audrey sing while playing the piano make me so proud.</h2>					
+			</div>
+		</div>
+
+		<!--Storge Entry Page 3-->
+		<div data-role="page" id="s-log3" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Storge</h1></div>
+			<!--Storge content.-->
+			<div data-role="content" >
+				<span class="ui-li-aside"><h3>01/04/12</h3></span>
+				<h2>Title: Questions, questions.</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 70%</h2>
+				<h2>Details: Ayo is always asking a million questions. "Why this?, why that?" His curiosity is growing, but it is exhausting 'cause he expects I have all the answers</h2>					
+			</div>
+		</div>
+
+		<!--Storge Entry Page 4-->
+		<div data-role="page" id="s-log4" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Storge</h1></div>
+			<!--Storge content.-->
+			<div data-role="content" >
+				<span class="ui-li-aside"><h3>12/21/11</h3></span>
+				<h2>Title: Ayo's Birthday.</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 90%</h2>
+				<h2>Details: Wow, he's already 4 years old. Where does the time go?</h2>					
+			</div>
+		</div>
+
+		<!--Storge Entry Page 5-->
+		<div data-role="page" id="s-log5" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Storge</h1></div>
+			<!--Storge content.-->
+			<div data-role="content" >
+				<span class="ui-li-aside"><h3>11/25/11</h3></span>
+				<h2>Title: Audrey's gift.</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Donor</h2>
+				<h2>Wow Factor: 90%</h2>
+				<h2>Details: Can't wait to give Audrey her Christmas gift, the look on her face will priceless.</h2>					
+			</div>
+		</div>
+
+
+		<!--Xenia Category Page-->
+		<div data-role="page" id="xenia" data-add-back-btn="true">
+
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Xenia</h1></div>
+
+
+				<!--List of logs under category.-->
+				<div data-role="content">
+
+					<ul data-role="listview" data-filter="true">
+						
+						<li>
+							<a href="#x-log1" data-transition="slide">
+							<h3>Saturday at the Bormann party house.</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>08/14/12</p></span>
+							<p>Details: It's always fun to spend time at my inlaws. With aboundant food and drink, and the pool, we always have fun as family there.</p></a>
+						</li>
+
+						<li>
+							<a href="#x-log3" data-transition="slide">
+							<h3>Dinner at the Browns'</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>04/14/12</p></span>
+							<p>Details: Dinner at the Browns was a lot of fun. Jenny and I enjoyed cooking for them.</p></a>
+						</li>
+
+						<li>
+							<a href="#x-log3" data-transition="slide">
+							<h3>Brinley and Zoe</h3>
+							<p>Location: Concord, NC</p>
+							<span class="ui-li-aside"><p>02/17/12</p></span>
+							<p>Details: Ayo always likes having those two over. And the are always so polite.</p></a>
+						</li>
+
+					</ul>
+
+				</div>
+	
+		<div data-role="footer" data-position="fixed" data-id="logs" data-theme="b">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home">About</a></li>
+					<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
+					<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
+					<li><a href="#search" id="search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
+
+		</div>
+
+		<!--Xenia Entry Page 1-->
+		<div data-role="page" id="x-log1" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Xenia</h1></div>
+			<!--Storge content.-->
+			<div data-role="content" >
+				<span class="ui-li-aside"><h3>08/14/12</h3></span>
+				<h2>Title: Saturday at the Bormann party house.</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Recepient</h2>
+				<h2>Wow Factor: 96%</h2>
+				<h2>Details: It's always fun to spend time at my inlaws. With aboundant food and drink, and the pool, we always have fun as family there.</h2>					
+			</div>
+		</div>
+
+		<!--Xenia Entry Page 2-->
+		<div data-role="page" id="x-log1" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Xenia</h1></div>
+			<!--Storge content.-->
+			<div data-role="content" >
+				<span class="ui-li-aside"><h3>04/14/12</h3></span>
+				<h2>Title: Dinner at the Browns'</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Donor</h2>
+				<h2>Wow Factor: 83%</h2>
+				<h2>Details: Dinner at the Browns was a lot of fun. Jenny and I enjoyed cooking for them.</h2>					
+			</div>
+		</div>
+
+		<!--Xenia Entry Page 3-->
+		<div data-role="page" id="x-log1" data-add-back-btn="true">
+			<div data-role="header" data-postiion="fixed" data-theme="b"><h1>Xenia</h1></div>
+			<!--Storge content.-->
+			<div data-role="content" >
+				<span class="ui-li-aside"><h3>02/17/12</h3></span>
+				<h2>Title: Brinley and Zoe</2>
+				<h2>Location: Concord, NC</h2>
+				<h2>Role: Donor</h2>
+				<h2>Wow Factor: 75%</h2>
+				<h2>Details: Ayo always likes having those two over. And the are always so polite.</h2>					
+			</div>
+		</div>
+
+
+
+
+
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script src="js/json.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+</body>
 </html>
