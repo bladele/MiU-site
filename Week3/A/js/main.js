@@ -1,4 +1,5 @@
+//
 $(document).ready(function() {
-	var amform = $('#addmovie')
+	var amform = $('#addmovieform');
 	amform.validate();
 });
