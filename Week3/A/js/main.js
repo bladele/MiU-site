@@ -1,10 +1,15 @@
 
 //
+$('#home').on('pageinit', function(){
+	//code needed for home page goes here
+});	
 var parseLogForm = function(data) {
 	console.log(data);
 };
 
-$(document).ready(function(){
+
+
+$('#addItem').on('pageinit', function(){
 
 	var lLform = $('#lovelogform'),
 		logerrorslink = $('#logerrorslink')
