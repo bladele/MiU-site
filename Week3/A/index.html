@@ -44,40 +44,20 @@
 	<!--Intro page of app. Intro to user.-->
 	<div data-role="page" id="home">
 
-		<div data-role="header" data-position="fixed" data-theme="a">
+		<div data-role="header" data-position="fixed" data-theme="b">
 			<h1>Love Log</h1>
 		</div>
 
 		<div data-role="content">
-			<p>Love is the prime directive of life, but we often shy away from applying love's equation into our
+		  <p><img src="images/<3_logo.png" width="309" height="121" align="absmiddle"></p>
+		  <p>Love is the prime directive of life, but we often shy away from applying love's equation into our
 		day to day lives. This application is a vehicle to record one's experience in love, in all it's forms,
 		from day to day. Learning to recognized and appreciate one's experience in love broadens one's capacity
 		for love. When was the last time you experienced love? Make a record of it.</p>
-			<p><a href="#myLogs" data-role="button" data-theme="b">Enter</a></p>
+		
 		</div>
-
-		<div data-role="footer" data-position="fixed" data-id="logs" data-theme="a">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" id="home" data-icon="home">About</a></li>
-					<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
-					<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
-					<li><a href="#search" id="search" data-icon="search">Search</a></li>
-				</ul>
-			</div>
-		</div>
-
-	</div>
-
-	<!--Page 2:My Logs, Where user can browse logs.-->
-	<div data-role="page" id="myLogs" data-add-back-btn="true" >
-
-		<div data-role="header" data-position="fixed" data-theme="b">
-			<h1>My Logs</h1>
-		</div>
-
-
-		<!--My Lists of Categories-->
+        
+        <!--My Lists of Categories-->
 		<div data-role="content">
 			<ul data-role="listview" data-inset="true" data-theme="b">
 				<li><h2>Choose An Event Type</h2>
@@ -100,21 +80,25 @@
 			</ul>
 		</div>
 
-	<!-- This would be where I would have code to retreive JSON data, but the assignment call for lists to be hard-coded.	
+		<div data-role="footer" data-position="fixed" data-id="logs" data-theme="b">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home">About</a></li>
+					<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
+					<li><a href="#search" id="search" data-icon="search">Search</a></li>
+				</ul>
+			</div>
+		</div>
 
-			<div data-role="content">
-			<ul data-role="listview" data-inset="true">
-				<cfoutput query="categories">
-					<li></li>
-			</ul>
+	</div>
 
-		<div data-role="content">
-			<a href="#" id="displaylink">My Logs</a>
-		</div> 
+	<!--Page 2:My Logs, Where user can browse logs.-->
+	<div data-role="page" id="myLogs" data-add-back-btn="true" >
 
-		</div>  
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>My Logs</h1>
+		</div>
 
-	--> 
 
 		
 
@@ -122,7 +106,6 @@
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" id="home" data-icon="home">About</a></li>
-					<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
 					<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
 					<li><a href="#search" id="search" data-icon="search">Search</a></li>
 				</ul>
@@ -134,7 +117,7 @@
 	<!--Page 3: Create New Log -->
 	<div data-role="page" id="newLog" data-add-back-btn="true">
 		
-		<div data-role="header" data-position="fixed" data-theme="e">
+		<div data-role="header" data-position="fixed" data-theme="b">
 			<h1>New Log</h1>
 		</div>
 
@@ -159,12 +142,12 @@
 
 						<div data-role="fieldcontain">
 							<label for="title">*Event Title</label>
-							<input type="text" name="title" id="title" class="required" />
+							<input type="text" name="title" id="title" value placeholder="Love Event 1" class="required" />
 						</div>
 
 						<div data-role="fieldcontain">
 							<label for="location">Location</label>
-							<input type="text" name="location" id="location"  />
+							<input type="text" name="location" id="location" value placeholder="Anywhere, USA" />
 						</div>
 
 						<div data-role="fieldcontain">
@@ -185,7 +168,7 @@
 						
 						<div data-role="fieldcontain">
 							<label for="notes">The Details</label>
-							<textarea></textarea>
+							<textarea value placeholder="A brief desicription of events..."></textarea>
 						</div>
 				
 				<div data-role="fieldcontain">
@@ -198,11 +181,10 @@
 			</form>
 		</div>
 
-		<div data-role="footer" data-position="fixed" data-id="logs" data-theme="e">
+		<div data-role="footer" data-position="fixed" data-id="logs" data-theme="b">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" id="home" data-icon="home">About</a></li>
-					<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
 					<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
 					<li><a href="#search" id="search" data-icon="search">Search</a></li>
 				</ul>
@@ -214,7 +196,7 @@
 	<!--Validation dialog -->
 	<div data-role="dialog" id="newLogerrors">
 		
-		<div data-role="header" data-position="fixed" data-theme="e">
+		<div data-role="header" data-position="fixed" data-theme="b">
 			<h1>Missing Fields</h1>
 		</div>
 
@@ -428,7 +410,6 @@
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" id="home" data-icon="home">About</a></li>
-					<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
 					<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
 					<li><a href="#search" id="search" data-icon="search">Search</a></li>
 				</ul>
@@ -491,9 +472,8 @@
 				<div data-role="navbar" data-position="fixed">
 					<ul>
 						<li><a href="#home" id="home" data-icon="home">About</a></li>
-						<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
 						<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
-						<li><a href="#" id="clear" data-icon="delete">Clear</a></li>
+						<li><a href="#search" id="clear" data-icon="search">Search</a></li>
 					</ul>
 				</div>
 			</div>
@@ -535,7 +515,6 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" id="home" data-icon="home">About</a></li>
-						<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
 						<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
 						<li><a href="#search" id="search" data-icon="search">Search</a></li>
 					</ul>
@@ -613,7 +592,6 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" id="home" data-icon="home">About</a></li>
-						<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
 						<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
 						<li><a href="#search" id="search" data-icon="search">Search</a></li>
 					</ul>
@@ -680,7 +658,6 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" id="home" data-icon="home">About</a></li>
-						<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
 						<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
 						<li><a href="#search" id="search" data-icon="search">Search</a></li>
 					</ul>
@@ -735,7 +712,6 @@
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" id="home" data-icon="home">About</a></li>
-					<li><a href="#myLogs" id="myLogs" data-icon="star">My Logs</a></li>
 					<li><a href="#newLog" id="newLog" data-icon="plus">New Log</a></li>
 					<li><a href="#search" id="search" data-icon="search">Search</a></li>
 				</ul>
