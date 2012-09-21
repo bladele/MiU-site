@@ -1,5 +1,19 @@
 /* Custome Styles */
 
+#home {text-align:center;
+		background: url(../images/background.jpg);
+		}
+		
+		
+#newLog {text-align:center;
+		background: url(../images/background.jpg);
+		}
+		
+		
+#search {text-align:center;
+		background: url(../images/background.jpg);
+		}
+
 label.error{display: block; margin:10px 0; color: #cc0000;}
 
 #logerrorslink{display: none;}

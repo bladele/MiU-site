@@ -278,7 +278,7 @@ var eventTypes = ["--Choose An Event Type--", "Agape[of the soul]", "Eros[of pas
 makeCats();
 
 
-/* Search */
+/* Search 
 function getSearch(){
 	alert("search");
 	var category = ge('eventTypes').value;
@@ -340,7 +340,7 @@ var clearLink = ge('clear');
 clearLink.addEventListener("click", clearLogs);
 var save = ge('submit');
 save.addEventListener("click", validate);
-var search = ge('search');
-search.addEventListener("click", getSearch);
+/*var search = ge('search');
+search.addEventListener("click", getSearch);*/
 
 });

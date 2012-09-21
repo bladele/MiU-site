@@ -20,6 +20,11 @@
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+	div h1 img {
+	overflow: visible;
+}
+    </style>
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
@@ -33,11 +38,14 @@
 	<div data-role="page" id="home">
 
 		<div data-role="header" data-position="fixed" data-theme="b">
-			<h1><img src="images/header_logo.png" width="133" height="44"></h1>
+			<h1>About</h1>
 		</div>
+        
+        <div data-role="content">
+        	<img src="images/header_logo.png"  alt="Logo">
+       	</div>
 
 		<div data-role="content">
-		  <p><img src="images/<3_logo.png" width="309" height="121" align="absmiddle"></p>
 		  <p>Love is the prime directive of life, but we often shy away from applying love's equation into our
 		day to day lives. This application is a vehicle to record one's experience in love, in all it's forms,
 		from day to day. Learning to recognized and appreciate one's experience in love broadens one's capacity
