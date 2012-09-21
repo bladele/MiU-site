@@ -1,5 +1,4 @@
-<!doctype html>
-	<head>
+<!doctype html><head>
 		<!-- Character Set Meta -->
 		<meta charset="utf-8" />
 
@@ -26,13 +25,15 @@
 		}
 		</style>
 
-		<!-- Header 1 with Logo Image -->
-		<div>
-			<a href="index.html"><img src="<3_logo.png"></a>
-		</div>
+ <!-- Header 1 with Logo Image -->
+		<header>
+			<a href="index.html"><img src="logo.png"></a>
+		</header>
+		
 		
 		<!-- CSS stylesheet link -->
-		<link rel="stylesheet" href="css/form.css" />
+		
+	<link rel="stylesheet" href="css/form.css" />
 
 		<!-- Font from Google Web Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
@@ -46,27 +47,31 @@
 			}
 		</style>
 
-		<li><label for="searchTerm"></label>Search:<input type="text" id="search"  /></li>	
-	
-	
-
-		<h2>
-		<nav>
-			<a href="additem.html" id="addNew" type="button" style=""display:none;>New Log</a>
-			<a href="#" id="displaylink">Reminisce</a>
-			<a href="#" id="clear">Clear</a>
-		</nav>
-		</h2>
-		
 	</head>
 		
 	
 
 	<body>
-
+    <h2>&nbsp;</h2>
+    <!-- Search -->
+   		<li><label for="searchTerm"></label>Search:<input type="text" id="search"  /></li>	
+        
+        
+     <h2>&nbsp;</h2> 
+    <!-- Navigation --> 
+    <h2>
+		<nav>
+			<a href="additem.html" id="addNew" type="button" style=""display:none;>New Log</a>
+			<a href="#" id="displaylink">Reminisce</a>
+			<a href="#" id="clear">Clear</a>
+		</nav>
+	</h2>
+        
+    <h2>&nbsp;</h2>
+	<!-- Form -->
 		<form action = "#"  method = "post" id="loveLog">
 			<fieldset id="eventLog">
-				<legend>Love Encounter</legend>
+			  <legend>Love Encounter</legend>
 				<span>* Fields are required</span>
 				<ul id="errors"></ul>
 				<ul id="questions">

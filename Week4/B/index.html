@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-	<head>
+<head>
 		<!-- Character Set Meta -->
 		<meta charset="utf-8" />
 
@@ -21,25 +21,35 @@
 		html {
 			background:url(background.jpg);
 			background-size:100% 100%;
-			background-repeat:no-repeat;
+			background-repeat:repeat;
 			padding-top: 0;
 			margin-top: 0;
 			
+			
+			
 		}
+		
 		</style>
 
 		<!-- Header 1 with Logo Image -->
-		
-		<div>
-			<img src="<3_logo.png">
-		</div>
+		<header>
+			<a href="index.html"><img src="logo.png"></a>
+		</header>
 
-		
+			<!-- Font from Google Web Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC' rel='stylesheet' type='text/css'>
+		<style>
+			header {
+				font-family: 'IM Fell Great Primer SC', serif;
+			}
+		</style>
 
 
 		<!-- CSS stylesheet link -->
 		<link rel="stylesheet" href="css/form.css" />
 	</head>
+    
+    
 		<!-- Font from Google Web Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC' rel='stylesheet' type='text/css'>
 		<style>
@@ -49,49 +59,77 @@
 		</style>
 	
 
-	<body>	
-	<p>
-		Love is the prime directive of life, but we often shy away from applying love's equation into our
-		day to day lives. This application is a vehicle to record one's experience in love, in all it's forms,
-		from day to day. Learning to recognized and appreciate one's experience in love broadens one's capacity
-		for love. When was the last time you experienced love? Make a record of it.
-	</p>
-	<div>
-	<nav>
-			<a href="additem.html" id="addNew" type="button" style=""display:none;><img src="newlog.png"></a>
-	</nav>
-    </div>
-
-
-<!-- My Search-->
-	<h2>
+<body>	
+    
+    <!-- My Search-->
+	<h3>
 		<div>
 		<label for="searchTerm"></label>Search:<input type="text" id="search"  />
 		</div>
-	</h2>
+	</h3>
+    
+    
+	<p>
+	Love is the prime directive of life. Learning to recognized and appreciate one's experience in love broadens one's capacity for love. When was the last time you experienced love? Make a record of it.</p>
+    
+    
+    <!-- Categories -->
+	<div>
+		<nav>
+			<a href="additem.html" id="addNew" type="button" style=""display:none;><img src="newlog.png"></a>
+	  	</nav>
+    </div>
+    
+    <div>
+		<nav>
+			<a href="#" id="displaylink" type="button" style=""><img src="reminisce.png"></a>
+	  	</nav>
+    </div>
+    
+    <div>
+		<nav>
+			<a href="search.html" id="search" type="button" style=""display:none;><img src="search.png"></a>
+	  </nav>
+    </div>
+    
+    <div>
+		<nav>
+			<a href="#" id="clear" type="button" style=""display:none;><img src="clear.png"></a>
+	  </nav>
+</div>
+
+
 
 <!-- My Browse Categories-->
 	<h2>Browse by cetegory</h2>
 	
     <h3>
-		<div>
+	  <div>
 			<a href="agape.html">Agape: Of the Soul</a>
 		</div>	
-		<div>
+	  <div>
 			<a href="eros.html">Eros: Of Passion</a>
 		</div>	
-		<div>
+	  <div>
 			<a href="philia.html">Philia: Of the Mind</a>
 		</div>	
-		<div>
+	  <div>
 			<a href="storge.html">Storge: Parental</a>
 		</div>	
-		<div>
+	  <div>
 			<a href="xenia.html">Xenia: Hospitality</a>
 		</div>
 	</h3>
+  
+    
+    
+    
+    
+</body>
+    
+    <script src="js/json.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
 
-	</body>
 	
 
 </html>
