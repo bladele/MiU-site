@@ -278,7 +278,7 @@ var eventTypes = ["--Choose An Event Type--", "Agape[of the soul]", "Eros[of pas
 makeCats();
 
 
-/* Search 
+/* Search
 function getSearch(){
 	alert("search");
 	var category = ge('eventTypes').value;
@@ -330,7 +330,7 @@ function getSearch(){
 	}
 
 
-}
+}*/
 
 
 //Set Link & Submit Click Events 
